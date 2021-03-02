@@ -1,0 +1,1 @@
+console.log('修改了package.json中main的字段', '指的是运行node./ 或者 node .\\', 'test.js');
