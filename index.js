@@ -1,7 +1,18 @@
-// console.log(global);
-// console.log(__dirname);
-// console.log(__filename);
-// console.log('index');
-// console.log(process); // 有很多属性
-// console.log(process.env);
-console.log(process.cwd()); // 当前运行node目录
+// 复制文件
+const path = require('path');
+const fs = require('fs');
+
+// pipe方式
+async function method2() {
+    const origin = path.resolve(__dirname, './myfiles/test10M.txt');
+    const target = path.resolve(__dirname, './myfiles/test10M.copy.txt');
+    console.time('方式3');
+    const rs = fs.createReadStream(origin);
+    const ws = fs.createWriteStream(target);
+    rs.pipe(ws);
+    rs.on('close', () => {
+        ws.end();
+        console.timeEnd('方式3')
+    })
+}
+method2();
