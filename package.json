@@ -18,5 +18,8 @@
   "homepage": "https://github.com/Tao3677/myNode#readme",
   "devDependencies": {
     "@types/node": "^14.14.31"
+  },
+  "dependencies": {
+    "ali-oss": "^6.15.2"
   }
 }
