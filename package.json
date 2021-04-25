@@ -1,0 +1,22 @@
+{
+  "name": "mynode",
+  "version": "1.0.0",
+  "description": "Node note",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tao3677/myNode.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tao3677/myNode/issues"
+  },
+  "homepage": "https://github.com/Tao3677/myNode#readme",
+  "devDependencies": {
+    "@types/node": "^14.14.31"
+  }
+}
